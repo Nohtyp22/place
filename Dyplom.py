@@ -94,7 +94,7 @@ progress_bar() # 0
 YD_token, VK_token = init_access_keys()
 progress_bar()   # 1
 if yd_functions('make folder','','') is True:
-    msg = f'Папка {FOLDER} на диске Yandex создана успешно'
+    msg_log += f'Папка {FOLDER} на диске Yandex создана успешно,\n'
 progress_bar()   # 2
 status, raw_data = get_photo_data(ALBUM,NUM_photos)
 if status is True:
